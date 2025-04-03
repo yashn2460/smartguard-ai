@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Backend server for SmartGuard AI",
   "main": "dist/server.js",
-  "scripts": {
+   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
-    "build": "rm -rf dist && tsc",
+    "build": "tsc",
     "test": "jest",
-    "prod": "npm run build && node dist/server.js"
+    "prod": "tsc && node dist/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
